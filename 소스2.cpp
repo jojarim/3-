@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int temp(int);
+
+int main(void)
+
+{
+	double f, c;
+
+	printf("¼·¾¾°ªÀº? : ");
+	scanf_s("%lf", &f);
+
+	c = (9.0 / 5.0) * f + 32.0;
+
+	printf("È­¾¾°ª¿Âµµ´Â % 1lfµµ ÀÔ´Ï´Ù.\n", c);
+
+	return 0;
+
+}
