@@ -1,19 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
-int temp(int);
 
-int main(void)
+int main()
 
 {
-	double f, c;
+	double a;
+	double b;
+	double c;
 
-	printf("섭씨값은? : ");
-	scanf_s("%lf", &f);
+	printf("섭씨온도를 입력하시오 : ");
 
-	c = (9.0 / 5.0) * f + 32.0;
+	scanf("%lf %lf %lf", &a, &b, &c);
+	printf("%f의 화씨온도는 %.4f 입니다.", a, (9.0 / 5.0) * a + 32.0);
+	printf("%f의 화씨온도는 %.4f 입니다.", b, (9.0 / 5.0) * b + 32.0);
+	printf("%f의 화씨온도는 %.4f 입니다.", c, (9.0 / 5.0) * c + 32.0);
 
-	printf("화씨값온도는 % 1lf도 입니다.\n", c);
 
-	return 0;
 
 }
